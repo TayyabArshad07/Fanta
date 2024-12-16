@@ -19,6 +19,9 @@ html,body{
 body{
     overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 /* All Flex Elements */
 header,nav,#one,#two,#two #left,#two #right,#three, #three #card{
