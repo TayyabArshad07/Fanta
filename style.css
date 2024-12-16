@@ -1,0 +1,191 @@
+@font-face{
+    font-family: fanta;
+    src: url("Fonts/Product Sans Regular.woff2");
+}
+@font-face{
+    font-family: fantaB;
+    src: url("Fonts/Product Sans Bold.woff2");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* All Flex Elements */
+header,nav,#one,#two,#two #left,#two #right,#three, #three #card{
+    display: flex;
+    align-items: center;
+}
+
+/* All Position Absolute Elements */
+#one h1,#fantaImg, #leaf, #leaf2, #leaf3, #orange, #orange2, #two #left svg, #cocacola, #pepsi, .lemon{
+    position: absolute;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(120deg,orange,orangered);
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0px 10vw;
+    color: white;
+    font-family: fanta;
+    z-index: 100;
+}
+header h4{
+    font-size: 2vw;
+}
+nav{
+    display: flex;
+    gap: 3vw;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+header i{
+    font-size: 2vw;
+}
+
+#one{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+#one h1{
+    font-size: 25vw;
+    font-family: fantab;
+    color: white;
+}
+#fantaImg{
+    width: 40vw;
+    z-index: 5;
+}
+
+#leaf{
+    width: 15vw;
+    transform: rotate(45deg);
+    top: 12%;
+    left: 5%;
+    z-index: 1;
+}
+#leaf2{
+    width: 12vw;
+    bottom: 7%;
+    right: 7%;
+    transform: rotate(-75deg);
+    z-index: 1;
+}
+#leaf3{
+    width: 20vw;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+#orange{
+    width: 20vw;
+    bottom: 0;
+    right: 30%;
+    z-index: 10;
+}
+#orange2{
+    width: 15vw;
+    top: 5%;
+    left: 35%;
+    z-index: 1;
+}
+#two{
+    height: 100vh;
+    width: 100%;
+    background-color: #4d231c;
+    justify-content: center;
+    position: relative;
+}
+#two #left,#two #right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#two #left svg{
+    width: 25vw;
+    top: 45%;
+    transform: rotateX(50deg);
+}
+#two #right{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vw;
+    color: white;
+    font-family: fanta;
+}
+#two #right h4{
+    font-size: 5vw;
+}
+#two #right p{
+    font-size: 1.2vw;
+    width: 80%;
+}
+#three{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    gap: 2vw;
+    background-color: orange;
+}
+#three #card{
+    margin-top: 10%;
+    height: 70%;
+    width: 25%;
+    background-color: white;
+    border-radius: 25px;
+    font-family: fanta;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 1vw;
+}
+#three #card h4{
+    font-size: 3vw;
+}
+#three #card button{
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: orange;
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    margin-bottom: 2vw;
+    cursor: pointer ;
+}
+#cocacola{
+    width: 50vw;
+    top: 5%;
+    transform: translateX(-2%);
+}
+#pepsi{
+    width: 36vw;
+    top: 5%;
+    transform: translateX(1%);
+    z-index: 10;
+}
+.lemon{
+    top: 0;
+    width: 25vw;    
+}
